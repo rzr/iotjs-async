@@ -1,2 +1,18 @@
+# Standard artifacts
 *~
-*.tmp
+*.swp
+.DS_Store
+.nyc_output/
+.cache-loader/
+
+# Build artifacts
+/build
+node_modules/
+static/js/lib/stm_web.min.js
+
+# Run-time artifacts
+.node-persist/
+config/local.js
+static/uploads
+.post_upgrade_complete
+/browser-test-output
