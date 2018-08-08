@@ -15,7 +15,7 @@
  */
 
 var console = require('console');
-var async = require('async-waterfall');
+var async = require('iotjs/async/index.js');
 
 async.waterfall(
     [
