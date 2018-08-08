@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rzr/async-waterfall/issues"
   },
-  "homepage": "https://github.com/rzr/async-waterfall#readme"
+  "homepage": "https://github.com/rzr/async-waterfall#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
 }
