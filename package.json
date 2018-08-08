@@ -2,9 +2,9 @@
   "name": "iotjs-async",
   "version": "0.0.0",
   "description": "Minimal implementation of async for iotjs",
-  "main": "index.js",
+  "main": "iotjs/async/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_PATH=. node example"
   },
   "repository": {
     "type": "git",
