@@ -71,6 +71,8 @@ IOTJS_EXTRA_MODULE_PATH=./node_modules/ iotjs node_modules/iotjs-async/example
 Client side, path can be adjusted or prefixed to support both runtime:
 
 ```
+cat example.js
+
 var async;
 if (process.iotjs) {
   async = require('iotjs-async');
@@ -78,8 +80,19 @@ if (process.iotjs) {
   async = require('async');
 }
 
-IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/../ iotjs ${example}
-NODE_PATH=.../iotjs-async/../ node ${example}
+IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/../ iotjs example.js
+NODE_PATH=.../iotjs-async/../ node example.js
+```
+
+If we want to avoid to change client's source, then use environment variables:
+
+```
+cat example.js
+
+var async = require('async');
+
+NODE_PATH=.../iotjs-async/iotjs node example.js
+IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/iotjs  iotjs example.js
 ```
 
 
