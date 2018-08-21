@@ -18,5 +18,8 @@
   "homepage": "https://github.com/rzr/iotjs-async#readme",
   "devDependencies": {
     "eslint": "^5.3.0"
+  },
+  "iotjs": {
+    "version": ">=1.0"
   }
 }
