@@ -4,6 +4,9 @@ Lightweight implementation of async's for IoT.js
 
 So far only waterfall function is implemented.
 
+* URL: https://github.com/rzr/iotjs-async
+
+[![GitHub forks](https://img.shields.io/github/forks/rzr/iotjs-async.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/rzr/iotjs-async/network/)
 
 [![NPM](https://nodei.co/npm/iotjs-async.png)](https://npmjs.org/package/iotjs-async)
 
@@ -12,6 +15,7 @@ So far only waterfall function is implemented.
 [![Build Status](https://api.travis-ci.org/rzr/iotjs-async.svg?branch=master)](https://travis-ci.org/rzr/iotjs-async)
 
 [![dependencies Status](https://david-dm.org/rzr/generic-sensor-lite/status.svg)](https://david-dm.org/rzr/generic-sensor-lite)
+
 
 ## USAGE: ##
 
@@ -38,7 +42,25 @@ iotjs example/index.js
 [4,2]
 ```
 
-Note that code can be imported using node npm package manager tool:
+Using module in your own project can be done easily by adding a git submodule
+(because IoT.js does not provide its own packaging tool):
+
+```
+git submodule add https://github.com/rzr/iotjs-async iotjs-modules/iotjs-async
+git commit -sam 'Import iotjs-async dependency'
+git submodule update --init
+```
+
+Or rely on IoT.js community repo to track supported versions
+(If you don't want the whole repo, extra post install cleanup scripts might be needed):
+
+```
+git submodule add https://github.com/samsung/iotjs-modules
+git commit -sam 'Import iotjs-modules dependency'
+git submodule update --init
+```
+
+Alternatively, code can be imported using node's npm package manager tool:
 
 ```
 npm install iotjs-async
@@ -46,20 +68,18 @@ IOTJS_EXTRA_MODULE_PATH=./node_modules/ iotjs node_modules/iotjs-async/example
 
 ```
 
-Alternatively gitmodule can be used to track master branch.
-
-
-Client side: path can be adjusted or prefixed:
+Client side, path can be adjusted or prefixed to support both runtime:
 
 ```
 var async;
-try {
+if (process.iotjs) {
+  async = require('iotjs-async');
+} else {
   async = require('async');
-} catch (err) {
-  async = require('iotjs/async/index.js');
 }
-IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/iotjs iotjs ${example}
-NODE_PATH=.../iotjs-async node ${example}
+
+IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/../ iotjs ${example}
+NODE_PATH=.../iotjs-async/../ node ${example}
 ```
 
 
