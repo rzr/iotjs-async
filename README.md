@@ -5,6 +5,14 @@ Lightweight implementation of async's for IoT.js
 So far only waterfall function is implemented.
 
 
+[![NPM](https://nodei.co/npm/iotjs-async.png)](https://npmjs.org/package/iotjs-async)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async?ref=badge_shield)
+
+[![Build Status](https://api.travis-ci.org/rzr/iotjs-async.svg?branch=master)](https://travis-ci.org/rzr/iotjs-async)
+
+[![dependencies Status](https://david-dm.org/rzr/generic-sensor-lite/status.svg)](https://david-dm.org/rzr/generic-sensor-lite)
+
 ## USAGE: ##
 
 
