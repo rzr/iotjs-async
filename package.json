@@ -1,6 +1,6 @@
 {
   "name": "iotjs-async",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Minimal implementation of async for iotjs",
   "main": "iotjs/async/index.js",
   "scripts": {
