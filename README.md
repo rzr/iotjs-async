@@ -92,6 +92,7 @@ NODE_PATH=.../iotjs-async/../ node ${example}
 * https://www.npmjs.com/package/async
 * https://www.npmjs.com/package/async-lite
 * https://github.com/SamDelgado/async-lite/pull/1
+* https://github.com/tizenteam/async-lite
 
 
 ## LICENSE: ##
