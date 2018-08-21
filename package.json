@@ -2,6 +2,7 @@
   "name": "iotjs-async",
   "version": "0.0.2",
   "description": "Minimal implementation of async for iotjs",
+  "readme": "README.md",
   "main": "iotjs/async/index.js",
   "scripts": {
     "test": "NODE_PATH=. node example",
@@ -22,5 +23,13 @@
   },
   "iotjs": {
     "version": ">=1.0"
-  }
+  },
+  "keywords": [
+    "async",
+    "callback",
+    "module",
+    "utility",
+    "iotjs",
+    "iotjs-module"
+  ]
 }
