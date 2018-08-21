@@ -15,7 +15,13 @@
  */
 
 var console = require('console');
-var async = require('iotjs/async/index.js');
+
+var async;
+try {
+  async = require('../iotjs-async.js');
+} catch (err) {
+  async = require('iotjs-async');
+}
 
 async.waterfall(
     [
