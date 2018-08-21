@@ -4,7 +4,8 @@
   "description": "Minimal implementation of async for iotjs",
   "main": "iotjs/async/index.js",
   "scripts": {
-    "test": "NODE_PATH=. node example"
+    "test": "NODE_PATH=. node example",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
