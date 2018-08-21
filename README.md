@@ -60,6 +60,7 @@ NODE_PATH=.../iotjs-async node ${example}
 * https://github.com/rzr/iotjs-async
 * http://iotjs.net
 * https://github.com/Samsung/iotjs-modules
+* https://github.com/Samsung/iotjs-modules/pull/14
 * https://www.npmjs.com/package/async
 * https://www.npmjs.com/package/async-lite
 * https://github.com/SamDelgado/async-lite/pull/1
