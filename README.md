@@ -7,14 +7,13 @@ So far only waterfall function is implemented.
 * URL: https://github.com/rzr/iotjs-async
 
 [![GitHub forks](https://img.shields.io/github/forks/rzr/iotjs-async.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/rzr/iotjs-async/network/)
+[![License](https://img.shields.io/badge/licence-Apache%202.0-brightgreen.svg?style=flat)](LICENSE)
+[![NPM](https://img.shields.io/npm/v/iotjs-async.svg)](https://www.npmjs.com/package/iotjs-async)
+[![Build Status](https://api.travis-ci.org/rzr/iotjs-async.svg?branch=master)](https://travis-ci.org/rzr/iotjs-async)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async?ref=badge_shield)
+[![dependencies Status](https://david-dm.org/rzr/generic-sensor-lite/status.svg)](https://david-dm.org/rzr/generic-sensor-lite)
 
 [![NPM](https://nodei.co/npm/iotjs-async.png)](https://npmjs.org/package/iotjs-async)
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async?ref=badge_shield)
-
-[![Build Status](https://api.travis-ci.org/rzr/iotjs-async.svg?branch=master)](https://travis-ci.org/rzr/iotjs-async)
-
-[![dependencies Status](https://david-dm.org/rzr/generic-sensor-lite/status.svg)](https://david-dm.org/rzr/generic-sensor-lite)
 
 
 ## USAGE: ##
@@ -46,9 +45,16 @@ Using module in your own project can be done easily by adding a git submodule
 (because IoT.js does not provide its own packaging tool):
 
 ```
-git submodule add https://github.com/rzr/iotjs-async iotjs-modules/iotjs-async
-git commit -sam 'Import iotjs-async dependency'
+git submodule add https://github.com/rzr/iotjs-async iotjs_modules/iotjs-async
+git commit -sam 'Import iotjs_async dependency'
 git submodule update --init
+```
+
+Note, ff you want to preseve path of NPM async module (require 'async'),
+just clone is directory of samename (to align node_modules/async)
+
+```sh
+git submodule add https://github.com/rzr/iotjs-async iotjs_modules/async
 ```
 
 Or rely on IoT.js community repo to track supported versions
