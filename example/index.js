@@ -16,7 +16,7 @@
 
 var console = require('console');
 
-var async;
+var async = null;
 try {
   async = require('../iotjs-async.js');
 } catch (err) {
