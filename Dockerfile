@@ -16,7 +16,7 @@
 #  limitations under the License.
 #}
 
-FROM ubuntu:latest
+FROM ubuntu:18.04
 MAINTAINER Philippe Coval (p.coval@samsung.com)
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -37,7 +37,7 @@ ENV project iotjs-async
 RUN echo "#log: ${project}: Setup system" \
   && set -x \
   && apt-get update -y \
-  && apt-get install -y iotjs \
+  && apt-get install -y iotjs git \
   && apt-get install -y npm \
   && apt-get clean \
   && sync
@@ -45,7 +45,11 @@ RUN echo "#log: ${project}: Setup system" \
 ADD . /usr/local/${project}/${project}
 WORKDIR /usr/local/${project}/${project}
 RUN echo "#log: ${project}: Preparing sources" \
-  && ls \
-  && iotjs example/index.js \
+  && set -x \
   && npm test \
+  && make test \
   && sync
+
+WORKDIR /usr/local/${project}/${project}
+ENTRYPOINT [ "/usr/bin/env", "make" ]
+CMD [ "test" ]
