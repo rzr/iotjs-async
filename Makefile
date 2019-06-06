@@ -30,6 +30,13 @@ srcs ?= $(wildcard *.js */*.js | sort | uniq)
 main_src ?= example/index.js
 test_src ?= ${main_src}
 
+deploy_modules_dir ?= ${CURDIR}/deploy/iotjs_modules/
+deploy_module_dir ?= ${deploy_modules_dir}/${project}
+deploy_dir ?= ${deploy_module_dir}
+
+deploy_srcs += ${deploy_dir}/iotjs/async/index.js
+deploy_srcs += ${deploy_dir}/index.js
+
 help:
 	@echo "## Usage: "
 
@@ -125,5 +132,13 @@ ${iotjs_modules_dir}: ${iotjs_modules_dirs}
 setup/iotjs: ${iotjs_modules_dir}
 	${@F} -h ||:
 
-iotjs/modules: ${iotjs_modules_dir}
+iotjs/modules: ${iotjs_modules_dirs}
+	ls $<
+
+${deploy_dir}/%: %
+	@echo "TODO: minify"
+	install -d ${deploy_dir}/${<D}
+	install $< $@
+
+deploy: ${deploy_srcs}
 	ls $<
