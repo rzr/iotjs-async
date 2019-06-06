@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/rzr/iotjs-async.git"
   },
-  "author": "Philippe Coval <philippe.coval@osg.samsung.com> (https://www.npmjs.com/~rzr)",
+  "author": "Philippe Coval <p.coval@samsung.com> (https://www.npmjs.com/~rzr)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/rzr/iotjs-async/issues"
