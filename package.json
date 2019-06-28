@@ -31,6 +31,8 @@
     "module",
     "utility",
     "iotjs",
-    "iotjs-module"
+    "iotjs-module",
+    "iotjs-supported",
+    "node-module"
   ]
 }
