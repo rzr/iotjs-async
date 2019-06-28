@@ -16,7 +16,7 @@ Lightweight implementation of async's for IoT.js
 
 So far only waterfall function is implemented.
 
-* URL: https://github.com/rzr/iotjs-async
+* URL: <https://github.com/rzr/iotjs-async#>
 
 
 ## USAGE: ##
@@ -27,10 +27,9 @@ So far only waterfall function is implemented.
 Running from sources tree is straightforward, but each step will be detailed.
 
 ```
-npm test
-[ 4, 2 ]
-or 
-nodejs example
+npm start
+#| node example
+#| [ 4, 2 ]
 ```
 
 
@@ -40,8 +39,10 @@ It's very similar to nodejs
 (just the path should be fully specified for iotjs-1.0)
 
 ```
-iotjs example/index.js
-[4,2]
+make start
+#| iotjs example/index.js
+#| [4,2]
+
 ```
 
 Using module in your own project can be done easily by adding a git submodule
@@ -104,21 +105,23 @@ NODE_PATH=.../iotjs-async/iotjs node example.js
 IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/iotjs  iotjs example.js
 ```
 
+[![iotjs_modules](https://image.slidesharecdn.com/webthing-iotjs-tizenrt-cdl2018-20181117rzr-181118110813/95/webthingiotjstizenrtcdl201820181117rzr-24-638.jpg)](https://www.slideshare.net/rzrfreefr/webthingiotjstizenrtcdl201820181117rzr/24 "iotjs_modules")
+
 
 ## RESOURCES: ##
 
-* https://github.com/rzr/iotjs-async
-* https://www.npmjs.com/package/iotjs-async
-* https://libraries.io/npm/iotjs-async
-* http://iotjs.net
-* https://github.com/Samsung/iotjs-modules
-* https://github.com/Samsung/iotjs-modules/pull/14
-* https://github.com/rzr/webthing-iotjs/wiki/IotJs
-* https://www.npmjs.com/package/async
-* https://www.npmjs.com/package/async-lite
-* https://github.com/SamDelgado/async-lite/pull/1
-* https://github.com/tizenteam/async-lite
-* https://github.com/TizenTeam/bmp085-sensor
+* <https://github.com/rzr/iotjs-async#>
+* <https://www.npmjs.com/package/iotjs-async#>
+* <https://libraries.io/npm/iotjs-async#>
+* <http://iotjs.net/#>
+* <https://github.com/Samsung/iotjs-modules#>
+* <https://github.com/Samsung/iotjs-modules/pull/14#>
+* <https://github.com/rzr/webthing-iotjs/wiki/IotJs#>
+* <https://www.npmjs.com/package/async#>
+* <https://www.npmjs.com/package/async-lite#>
+* <https://github.com/SamDelgado/async-lite/pull/1#>
+* <https://github.com/tizenteam/async-lite#>
+* <https://github.com/TizenTeam/bmp085-sensor#>
 
 
 ## LICENSE: ##
