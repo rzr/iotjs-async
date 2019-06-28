@@ -122,6 +122,7 @@ IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/iotjs  iotjs example.js
 * <https://github.com/SamDelgado/async-lite/pull/1#>
 * <https://github.com/tizenteam/async-lite#>
 * <https://github.com/TizenTeam/bmp085-sensor#>
+* <https://github.com/dbridges/bmp085-sensor/pull/7#>
 
 
 ## LICENSE: ##
