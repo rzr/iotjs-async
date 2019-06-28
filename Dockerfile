@@ -42,14 +42,14 @@ RUN echo "#log: ${project}: Setup system" \
   && apt-get clean \
   && sync
 
-ADD . /usr/local/${project}/${project}
-WORKDIR /usr/local/${project}/${project}
+ADD . /usr/local/opt/${project}/src/${project}
+WORKDIR /usr/local/opt/${project}/src/${project}
 RUN echo "#log: ${project}: Preparing sources" \
   && set -x \
   && npm test \
   && make test \
   && sync
 
-WORKDIR /usr/local/${project}/${project}
+WORKDIR /usr/local/opt/${project}/src/${project}
 ENTRYPOINT [ "/usr/bin/env", "make" ]
 CMD [ "test" ]
