@@ -1,4 +1,4 @@
-#_!/bin/make -f
+#!/bin/make -f
 # -*- makefile -*-
 # SPDX-License-Identifier: Apache-2.0
 #{
@@ -30,12 +30,16 @@ srcs ?= $(wildcard *.js */*.js | sort | uniq)
 main_src ?= example/index.js
 test_src ?= ${main_src}
 
+iotjs_modules_dir ?= iotjs_modules
+iotjs_modules_dirs ?= ${iotjs_modules_dir}
 deploy_modules_dir ?= ${CURDIR}/deploy/iotjs_modules/
 deploy_module_dir ?= ${deploy_modules_dir}/${project}
 deploy_dir ?= ${deploy_module_dir}
 
 deploy_srcs += ${deploy_dir}/iotjs/async/index.js
 deploy_srcs += ${deploy_dir}/index.js
+
+
 
 help:
 	@echo "## Usage: "
@@ -45,11 +49,18 @@ all: build
 
 node_modules: package.json
 	npm install
+	-@mkdir -p $@
 
 package-lock.json: package.json
 	rm -fv "$@"
 	npm install
 	ls "$@"
+
+node/modules: node_modules
+	@echo "log: $@: $^"
+
+modules: ${runtime}/modules
+	@echo "log: $@: $^"
 
 setup/node: node_modules
 	@echo "NODE_PATH=$${NODE_PATH}"
@@ -77,6 +88,18 @@ cleanall: clean
 distclean: cleanall
 	rm -rf node_modules
 
+run/%: ${main_src} modules
+	${@F} $< ${run_args}
+
+run/npm: ${main_src} setup
+	npm start
+
+run: run/${runtime}
+	@echo "log: $@: $^"
+
+node/run: ${main_src}
+	node $<
+
 npm/test: package.json
 	npm test
 
@@ -84,6 +107,9 @@ ${runtime}/test: ${test_src} ${runtime}/modules
 	${@D} $<
 
 test: ${runtime}/test
+	@echo "log: $@: $^"
+
+start: run
 	@echo "log: $@: $^"
 
 check/%: ${srcs}
@@ -133,7 +159,7 @@ setup/iotjs: ${iotjs_modules_dir}
 	${@F} -h ||:
 
 iotjs/modules: ${iotjs_modules_dirs}
-	ls $<
+	@mkdir -p $<
 
 ${deploy_dir}/%: %
 	@echo "TODO: minify"
