@@ -5,7 +5,8 @@
   "readme": "README.md",
   "main": "iotjs/async/index.js",
   "scripts": {
-    "test": "NODE_PATH=. node example",
+    "start": "node example",
+    "test": "node example",
     "lint": "eslint ."
   },
   "repository": {
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/rzr/iotjs-async/issues"
   },
-  "homepage": "https://github.com/rzr/iotjs-async#readme",
+  "homepage": "https://libraries.io/npm/iotjs-async",
   "devDependencies": {
     "eslint": "^5.3.0"
   },
