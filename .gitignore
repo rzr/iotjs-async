@@ -1,3 +1,4 @@
+# .gitignore
 # Standard artifacts
 *~
 *.swp
@@ -7,6 +8,7 @@
 
 # Build artifacts
 /build
+iotjs_modules/
 node_modules/
 static/js/lib/stm_web.min.js
 
