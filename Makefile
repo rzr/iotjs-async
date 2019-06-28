@@ -31,7 +31,7 @@ main_src ?= example/index.js
 test_src ?= ${main_src}
 
 iotjs_modules_dir ?= iotjs_modules
-iotjs_modules_dirs ?= ${iotjs_modules_dir}
+iotjs_modules_dirs ?= ${iotjs_modules_dir}/.
 deploy_modules_dir ?= ${CURDIR}/deploy/iotjs_modules/
 deploy_module_dir ?= ${deploy_modules_dir}/${project}
 deploy_dir ?= ${deploy_module_dir}
@@ -150,6 +150,10 @@ lint/%: eslint
 
 lint: lint/${runtime}
 	@echo "log: $@: $^"
+
+${iotjs_modules_dirs}: Makefile
+	mkdir -p $@
+	ls $@
 
 ${iotjs_modules_dir}: ${iotjs_modules_dirs}
 	mkdir -p $@
