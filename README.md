@@ -1,13 +1,39 @@
 # IOTJS-ASYNC #
 
-[![GitHub forks](https://img.shields.io/github/forks/rzr/iotjs-async.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/rzr/iotjs-async/network/)
-[![License](https://img.shields.io/badge/licence-Apache%202.0-brightgreen.svg?style=flat)](LICENSE)
-[![NPM](https://img.shields.io/npm/v/iotjs-async.svg)](https://www.npmjs.com/package/iotjs-async)
-[![Build Status](https://api.travis-ci.org/rzr/iotjs-async.svg?branch=master)](https://travis-ci.org/rzr/iotjs-async)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async?ref=badge_shield)
-[![dependencies Status](https://david-dm.org/rzr/iotjs-async/status.svg)](https://david-dm.org/rzr/iotjs-async)
+[![GitHub forks](
+https://img.shields.io/github/forks/rzr/iotjs-async.svg?style=social&label=Fork&maxAge=2592000
+)](
+https://GitHub.com/rzr/iotjs-async/network/
+)
+[![License](
+https://img.shields.io/badge/licence-Apache%202.0-brightgreen.svg?style=flat
+)](LICENSE)
+[![NPM](
+https://img.shields.io/npm/v/iotjs-async.svg
+)](
+https://www.npmjs.com/package/iotjs-async
+)
+[![Build Status](
+https://api.travis-ci.org/rzr/iotjs-async.svg?branch=master
+)](
+https://travis-ci.org/rzr/iotjs-async
+)
+[![FOSSA Status](
+https://app.fossa.io/api/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async.svg?type=shield
+)](
+https://app.fossa.io/projects/git%2Bgithub.com%2Frzr%2Fiotjs-async?ref=badge_shield
+)
+[![dependencies Status](
+https://david-dm.org/rzr/iotjs-async/status.svg
+)](
+https://david-dm.org/rzr/iotjs-async
+)
 
-[![NPM](https://nodei.co/npm/iotjs-async.png)](https://npmjs.org/package/iotjs-async)
+[![NPM](
+https://nodei.co/npm/iotjs-async.png
+)](
+https://npmjs.org/package/iotjs-async
+)
 
 
 ## INTRODUCTION: ##
