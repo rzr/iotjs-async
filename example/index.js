@@ -23,7 +23,8 @@ try {
   async = require('iotjs-async');
 }
 
-async.waterfall(
+function main() {
+  async.waterfall(
     [
       function(callback) {
         callback(null, 42);
@@ -36,3 +37,10 @@ async.waterfall(
       if (err) throw err;
       console.log(res);
     });
+}
+
+module.export = main;
+
+if (!module.parent) {
+  main();
+}
