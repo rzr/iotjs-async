@@ -140,8 +140,7 @@ IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/iotjs  iotjs example.js
 * <https://www.npmjs.com/package/iotjs-async#>
 * <https://libraries.io/npm/iotjs-async#>
 * <http://iotjs.net/#>
-* <https://github.com/Samsung/iotjs-modules#>
-* <https://github.com/Samsung/iotjs-modules/pull/14#>
+* <https://github.com/jerryscript-project/iotjs-modules/>
 * <https://github.com/rzr/webthing-iotjs/wiki/IotJs#>
 * <https://www.npmjs.com/package/async#>
 * <https://www.npmjs.com/package/async-lite#>
@@ -149,6 +148,7 @@ IOTJS_EXTRA_MODULE_PATH=.../iotjs-async/iotjs  iotjs example.js
 * <https://github.com/tizenteam/async-lite#>
 * <https://github.com/TizenTeam/bmp085-sensor#>
 * <https://github.com/dbridges/bmp085-sensor/pull/7#>
+* <https://mastodon.social/@tizenhelper/103775679164369666>
 
 
 ## LICENSE: ##
