@@ -20,7 +20,7 @@
   },
   "homepage": "https://libraries.io/npm/iotjs-async",
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^9.32.0"
   },
   "iotjs": {
     "version": ">=1.0"
